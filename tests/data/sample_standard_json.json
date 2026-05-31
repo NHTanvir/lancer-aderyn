@@ -1,0 +1,111 @@
+{
+  "sources": {
+    "src/Sample.sol": {
+      "id": 0,
+      "ast": {
+        "nodeType": "SourceUnit",
+        "id": 1,
+        "src": "0:400:0",
+        "absolutePath": "src/Sample.sol",
+        "nodes": [
+          {
+            "nodeType": "PragmaDirective",
+            "id": 100,
+            "src": "0:24:0",
+            "literals": ["solidity", "^", "0.8", ".0"]
+          },
+          {
+            "nodeType": "ContractDefinition",
+            "id": 2,
+            "src": "26:370:0",
+            "name": "Sample",
+            "contractKind": "contract",
+            "linearizedBaseContracts": [2],
+            "nodes": [
+              {
+                "nodeType": "FunctionDefinition",
+                "id": 3,
+                "src": "50:300:0",
+                "name": "auth",
+                "kind": "function",
+                "visibility": "public",
+                "stateMutability": "nonpayable",
+                "implemented": true,
+                "modifiers": [],
+                "parameters": { "id": 4, "src": "60:2:0", "parameters": [] },
+                "returnParameters": { "id": 5, "src": "70:0:0", "parameters": [] },
+                "body": {
+                  "nodeType": "Block",
+                  "id": 6,
+                  "src": "72:270:0",
+                  "statements": [
+                    {
+                      "nodeType": "ExpressionStatement",
+                      "id": 7,
+                      "src": "80:40:0",
+                      "expression": {
+                        "nodeType": "BinaryOperation",
+                        "id": 8,
+                        "src": "80:30:0",
+                        "operator": "==",
+                        "commonType": { "typeString": "address" },
+                        "typeDescriptions": { "typeString": "bool" },
+                        "leftExpression": {
+                          "nodeType": "MemberAccess",
+                          "id": 9,
+                          "src": "80:9:0",
+                          "memberName": "origin",
+                          "expression": {
+                            "nodeType": "Identifier",
+                            "id": 10,
+                            "src": "80:2:0",
+                            "name": "tx",
+                            "typeDescriptions": { "typeString": "tx" }
+                          },
+                          "typeDescriptions": { "typeString": "address" }
+                        },
+                        "rightExpression": {
+                          "nodeType": "MemberAccess",
+                          "id": 11,
+                          "src": "95:10:0",
+                          "memberName": "sender",
+                          "expression": {
+                            "nodeType": "Identifier",
+                            "id": 12,
+                            "src": "95:3:0",
+                            "name": "msg",
+                            "typeDescriptions": { "typeString": "msg" }
+                          },
+                          "typeDescriptions": { "typeString": "address" }
+                        }
+                      }
+                    },
+                    {
+                      "nodeType": "ExpressionStatement",
+                      "id": 13,
+                      "src": "130:30:0",
+                      "expression": {
+                        "nodeType": "MemberAccess",
+                        "id": 14,
+                        "src": "130:15:0",
+                        "memberName": "timestamp",
+                        "expression": {
+                          "nodeType": "Identifier",
+                          "id": 15,
+                          "src": "130:5:0",
+                          "name": "block",
+                          "typeDescriptions": { "typeString": "block" }
+                        },
+                        "typeDescriptions": { "typeString": "uint256" }
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}
